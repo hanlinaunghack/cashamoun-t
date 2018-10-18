@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Test Runner</title>
+    <link href="https://unpkg.com/mocha@5.2.0/mocha.css" rel="stylesheet" />
+    <script src="https://unpkg.com/chai/chai.js"></script>
+    <script src="https://unpkg.com/mocha@5.2.0/mocha.js"></script>
+    <script>
+        mocha.setup('bdd');
+        var expect = chai.expect;
+        $(function () {
+            window.mochaPhantomJS ? mochaPhantomJS.run() : mocha.run();
+        });
+    </script>
+</head>
+
+<body>
+    <div id="mocha"></div>
+    <script src="testsuite.js"></script>
+    <script>
+        mocha.checkLeaks();
+        mocha.run();
+    </script>
+</body>
+
+</html>

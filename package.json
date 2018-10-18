@@ -1,0 +1,19 @@
+{
+  "name": "testsuite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "testsuite.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai-html": "^1.2.1"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
+}
